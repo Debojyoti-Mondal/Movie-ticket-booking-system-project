@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+
+        h1{
+            display:flex;
+            justify-content: center;
+            color:white;
+            background-color:#212529;
+            padding-top: 20px;
+            margin: 0;
+        }
+        .class1{
+            display:flex;
+            justify-content: space-between;
+            gap:1rem;
+            margin-bottom: 20px;
+        }
+
+        .Search{
+            margin:1px 1px 1px 1px;
+            width:85%;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+        }
+
+        .Login{
+            width:15%;
+            color: white !important;
+            background-color: orangered;
+            padding:5px;
+        }
+
+        .class1>div{
+            color:grey;
+            text-align: center;
+        }
+
+        .Cities{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap:1rem;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .Cities>button{
+            background-color:#f2f2f2;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .card{
+            height:100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Online Movie Ticket Booking System</h1>
+    <section>
+        <header class="p-3 text-bg-dark">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Movies</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Cities</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
+                </ul>
+        
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-bg-" placeholder="Search..." aria-label="Search">
+                </form>
+        
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-light me-2">Login</button>
+                  <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+              </div>
+            </div>
+          </header>
+    </section>
+    <hr>
+    <div style="margin-inline: 4rem" class="Cities">
+        <button>Kolkata</button>
+        <button>Mumbai</button>
+        <button>Delhi</button>
+        <button>Nagpur</button>
+        <button>Lucknow</button>
+        <button>Bangalore</button>
+        <button>Chennai</button>
+        <button>Agra</button>
+        <button>Mathura</button>
+        <button>Jaipur</button>
+    </div>
+    <hr>
+    <h2 style="margin-inline-start: 4rem">Trending Movies</h2>
+    <div class="container p-2">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./Jawan.jpeg", height="235">
+              <div class="card-body">
+                <p class="card-text fw-bold">Jawan</p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nam quod qui quos. Repellat aliquid impedit quisquam recusandae nobis. Consectetur.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
+                  </div>
+                  <small class="text-body-secondary">2hr 49mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./Nun 2.jpeg", height="235">
+              <div class="card-body">
+                <p class="card-text fw-bold">The Nun II</p>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, laudantium commodi sunt laborum corporis recusandae enim soluta adipisci. Ea, sunt!</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
+                  </div>
+                  <small class="text-body-secondary">1hr 51mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./Dream Girl 2.avif", height="235">
+              <div class="card-body">
+                <p class="card-text fw-bold">Dream Girl 2</p>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium eveniet delectus consectetur libero non cumque maiores ut eum mollitia voluptas!</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
+                  </div>
+                  <small class="text-body-secondary">2hr 13mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./Gadar 2.jpeg", height="235">
+              <div class="card-body">
+                <p class="card-text fw-bold">Gadar 2</p>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat eveniet doloribus ducimus saepe dignissimos consectetur.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
+                  </div>
+                  <small class="text-body-secondary">2hr 50mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./omg 2.webp", height="235">
+              <div class="card-body">
+                <p class="card-text fw-bold">OMG 2</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora obcaecati sunt assumenda commodi rem ipsam a voluptatum vel dolores in!</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
+                  </div>
+                  <small class="text-body-secondary">2hr 36mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./Oppenheimer.jpeg", height="235">
+              <div class="card-body">
+                <p class="card-text fw-bold">Oppenheimer</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis a illum accusamus repudiandae inventore quasi minus odio in cupiditate cum.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
+                  </div>
+                  <small class="text-body-secondary">3hr 10mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./Barbie.jpeg", height="235">
+              <div class="card-body">
+                <p class="card-text fw-bold">Barbie</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia veniam natus consequatur ullam sint minima eveniet ratione delectus quidem architecto.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
+                  </div>
+                  <small class="text-body-secondary">1hr 54mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./Mark Antony.jpeg" height="235">
+              <div class="card-body">
+                <p class="card-text fw-bold">Mark Antony</p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consectetur ullam id nobis doloribus dolorum unde nihil numquam, quibusdam corrupti.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
+                  </div>
+                  <small class="text-body-secondary">2hr 31mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./Chal Zindagi.avif", height="235">
+              <div class="card-body">
+                <p class="card-text fw-bold">Chal Zindagi</p>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad hic minus iste veniam quas nulla odit ipsam molestiae reprehenderit nihil.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
+                  </div>
+                  <small class="text-body-secondary">2hr 10mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
